@@ -1,0 +1,300 @@
+*{
+  font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  box-sizing: border-box;
+  }
+body{
+  margin: 0em;
+  padding: 0em;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+.text-38{
+  font-size: 38px;
+}
+.text-28{
+  font-size: 28px;
+}
+.text-20{
+  font-size: 20px;
+}
+.text-16{
+  font-size: 16px;
+}
+.text-12{
+  font-size: 12px;
+}
+.text-10{
+  font-size: 10px;
+}
+
+/* header */
+.header-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  padding: 10px 50px;
+}
+
+/* .header-left */
+.header-left h1{
+  color: #000;
+  font-weight: 900;
+}
+
+/* header-right */
+.header-right a{
+  font-size: 12px;
+  color: #ccc;
+}
+.header-right a:hover{
+  color: #eee;
+}
+.header-right button{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  float: right;
+  margin: 5px;
+  color: #ccc;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.header-right button:hover{
+  color: #eee;
+  border: 2px solid #eee;
+}
+.menu-slide{
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  margin-top: 30px;
+  text-align: right;
+}
+
+/* main-title */
+.main-title{
+  text-align: center;
+  background-image: url("img/page-top.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px;
+}
+.main-title h1{
+  font-size: 100px;
+  font-weight: 900;
+}
+.main-title span{
+  color: red;
+}
+.main-title h2{
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* page-topicon */
+#page_top{
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  z-index: 10;
+  right: 50px;
+  bottom: 50px;
+  background: #ececec;
+}
+#page_top a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+#page_top a::before{
+  margin-top: 15px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f077';
+  font-size: 30px;
+  color: #000;
+}
+
+/* about */
+#about{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about-title{
+  margin-bottom: 50px;
+}
+.title h1 {
+  position: relative;
+  text-align: center;
+}
+.title h1 span {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin: 0 2.5em;
+  padding: 0 1em;
+  background-color: #fff;
+  text-align: left;
+}
+.title h1::before {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+.profile-wrapper{
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+}
+.profile-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-image img{
+  display: block;
+  border: 3px solid silver;
+}
+.profile-message{
+  margin-left: 50px;
+}
+
+/* skills*/
+#skills{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.skills-title{
+  margin-bottom: 50px;
+}
+.skill-wrapper{
+  padding: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border: 3px solid silver;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skill-wrapper:hover{
+  position: relative;
+  bottom: 2px;
+  border: 3px solid red;
+}
+.skill-open{
+  position: relative;
+  margin-bottom: 20px;
+}
+.skill-open::after{
+  font-family: "Font Awesome 5 Free";
+  content: "\f0dd";
+  font-weight: 900;
+  font-size: 50px;
+  color: silver;
+  position: absolute;
+  bottom: -35%;
+}
+.skill-open.active::after{
+  content: "\f0de";
+  bottom: -45%;
+}
+.skill-open i{
+  font-size: 100px;
+}
+.fa-html5{
+  color: aqua;
+}
+.fa-css3-alt{
+  color: orangered;
+}
+.fa-js-square{
+  color: orange;
+}
+.skill-open{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill-slide{
+  margin-top: 20px;
+}
+.skill-slide p{
+  margin: 0;
+}
+
+/* works*/
+#works{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.works-wrapper{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 100px;
+}
+.works-image img{
+  border: 2px solid silver;
+}
+.works-message h1{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.works-message p{
+  padding: 20px;
+}
+.button-contents{
+  max-width: 100%;
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  background-color: rgba(255, 0, 21, 0.733);
+  padding: 20px 100px;
+  border-radius: 30px;
+  border: none;
+}
+.button-contents:hover{
+  background-color: rgba(255, 0, 21, 0.932);
+}
+.button-contents a{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* contact */
+#contact{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contact-title{
+  margin-bottom: 50px;
+}
+.form-btn{
+  color: #fff;
+  margin-top: 50px;
+}
+.responsive{
+  display: none;
+}
+
+/* footer */
+.copyright{
+  text-align: center;
+}

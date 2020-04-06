@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- title -->
+    <title>My Portfolio</title>
+
+    <!-- サニタイズCSS -->
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
+
+    <!-- Bootstrap読み込み -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- font-awesome読み込み -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+
+    <!-- font-family読み込み -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+
+    <!-- スタイルシート読み込み -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+  </head>
+
+  <body>
+
+    <!-- header -->
+    <header>
+      <div class="header-wrapper">
+
+        <!-- header-left【wide-screen】-->
+        <div class="header-left">
+          <h1 class="text-28">ポートフォリオサイト</h1>
+        </div>
+
+        <!-- header-right【wide-screen】-->
+        <div class="header-right">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#works">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- header【responsive】-->
+      <div class="header-right responsive">
+        <button class="menu-btn">
+        MENU<i class="fas fa-bars ml-1"></i></button>
+        <div class="menu-slide">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#works">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" >Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- main-title -->
+      <div class="main-title">
+        <h1> <span>P</span>ort <span>F</span>orio</h1>
+        <h2 class="text-28">プログラミング学習の軌跡</h2>
+      </div>
+    </header>
+
+    <!-- page_top-icon -->
+    <div id="page_top"><a href="#"></a></div>
+
+    <!-- main-contents -->
+    <div class="container">
+
+      <!-- about -->
+      <div id="about">
+
+        <!-- about-title -->
+        <div class="title about-title">
+          <h1 class="text-38"><span>自己紹介</span></h1>
+        </div>
+
+        <!-- about-message -->
+        <div class="row">
+          <div class="profile-wrapper">
+            <div class="col-lg-4">
+              <div class="profile-image">
+                <img class="img-fluid"src="https://picsum.photos/300/300" alt="自画像">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="profile-message">
+                <h1 class="text-38 mt-2">About Me</h1>
+                <p class="text-20">Tomoya Kitzawa(北澤 知也)</p>
+                <p class="text-20">1983年生まれ 鳥取出身</p>
+                <p class="text-20">第二の人生をプログラマーとして<br>過ごすために独学でプログラミングを勉強中<br>将来はWEBエンジニアとして仕事をしたいです。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- skills -->
+      <div id="skills">
+
+        <!-- skills-title -->
+        <div class="title skills-title">
+          <h1 class="text-38"><span>習得スキル</span></h1>
+        </div>
+        <div class="row">
+
+          <!-- skill-HTML -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="skill-wrapper">
+              <div class="skill-open">
+                <h1 class="text-28">HTML</h1>
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="skill-slide">
+                <p class="text-16">見やすいコード、CEOを意識したコーディングが得意です。レスポンシブWEBデザインでの作成も可能です。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- skill-CSS -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="skill-wrapper">
+              <div class="skill-open">
+                <h1 class="text-28">CSS</h1>
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="skill-slide">
+                <p class="text-16">見た目にこだわったCSSを構築します。またbootstrapを使用して素早くコーディングすることができます。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- skill-Javascpipt -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="skill-wrapper">
+              <div class="skill-open">
+                <h1 class="text-28">Javascrirt</h1>
+                <i class="fab fa-js-square"></i>
+              </div>
+              <div class="skill-slide">
+                <p class="text-16">Jqueryを使用して、動的なWEB制作が可能です。日々新たな能力を習得するため情報収集を欠かしません。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- skill-Wordpress -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="skill-wrapper">
+              <div class="skill-open">
+                <h1 class="text-28">Wordpress</h1>
+                <i class="fab fa-wordpress"></i>
+              </div>
+              <div class="skill-slide">
+                <p class="text-16">ブログ形式のHPをWordPressで実装し、運用することができます。サーバーやドメインの知識もあります。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- works -->
+      <div id="works">
+
+        <!-- works-title -->
+        <div class="title skills-title">
+          <h1 class="text-38"><span>業績</span></h1>
+        </div>
+
+        <!-- works-write -->
+        <div class="works-wrapper">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="works-image">
+                <img class="img-fluid" src="img\write.jpg" alt="writeサイト模写">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="works-message">
+                <h1 class="text-28">HP模写 write</h1>
+                <p class="text-16">初めての模写コーディングです。<br>まだレスポンシブデザインでの実装も出来ていないですが、ブログ形式でのHP作成についてのノウハウを学びました。</p>
+                <button class="button-contents">
+                  <a class="wide-screen"  href="https://tomoya-cpn.github.io/write.github.io/">実サイトへのリンク</a>
+                  <a class="responsive"  href="https://tomoya-cpn.github.io/write.github.io/">Link</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- works-clinic -->
+        <div class="works-wrapper">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="works-image">
+                <img class="img-fluid" src="img\clinic.jpg" alt="clinicサイト模写">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="works-message">
+                <h1 class="text-28">HP模写 Dental Clinic</h1>
+                <p class="text-16">2番目の模写コーディングです。<br>CSSでFlexboxの使用方法を学び、２カラムデザインのWEBサイトを作るためのノウハウを学びました。また、CSSでのサイトの装飾方法を学び鮮やかなデザインを構築するためのスキルを身に着けました。</p>
+                <button class="button-contents">
+                  <a class="wide-screen"  href="https://tomoya-cpn.github.io/hospital.github.io/">実サイトへのリンク</a>
+                  <a class="responsive"  href="https://tomoya-cpn.github.io/hospital.github.io/">Link</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- works-Jin -->
+        <div class="works-wrapper">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="works-image">
+                <img class="img-fluid" src="img\jin.jpg" alt="jinサイト模写">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="works-message">
+                <h1 class="text-28">HP模写 JIN</h1>
+                <p class="text-16">3番目の模写コーディングです。<br>2カラムデザインのWEBサイトのレスポンシブデザイン模写です。カードの作り方を学びました。また、jQueryを使用して、動的なサイトの構築にチャレンジしています。</p>
+                <button class="button-contents">
+                  <a class="wide-screen"  href="https://tomoya-cpn.github.io/jin.github.io/">実サイトへのリンク</a>
+                  <a class="responsive"  href="https://tomoya-cpn.github.io/jin.github.io/">Link</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- works-iSARA -->
+        <div class="works-wrapper">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="works-image">
+                <img class="img-fluid" src="img\isara.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="works-message">
+                <h1 class="text-28">HP模写 iSARA</h1>
+                <p class="text-16">最後の模写コーディングです。<br>ボリュームのあるWEBサイトを構築することが出来、疑似要素、アコーディオンの実装、２段階のレスポンシブデザインと、実装に時間はかかりましたが、WEBサイトのコーディングに関して必要なほとんどのスキルを身につけることが出来ました。</p>
+                <button class="button-contents">
+                  <a class="wide-screen"  href="https://tomoya-cpn.github.io/isara.github.io/">実サイトへのリンク</a>
+                  <a class="responsive"  href="https://tomoya-cpn.github.io/isara.github.io/">Link</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact -->
+      <div id="contact">
+        <div class="title contact-title">
+          <h1 class="text-38"><span>お問い合わせ</span></h1>
+        </div>
+        <div class="form-wrapper">
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd1PU2kL5mHLIbsJvJi9RZ7dWmaQBpNaTGpSjGyeTp-7WZH3A/formResponse" >
+            <div class="form-group">
+              <label>お名前</label>
+              <input type="text" name="entry.1079185613"class="form-control">
+            </div>
+            <div class="form-group">
+              <label>メールアドレス</label>
+              <input type="email" name="entry.1913635903"class="form-control">
+            </div>
+            <div class="form-group">
+              <label>タイトル</label>
+              <input type="text" name="entry.716135548"class="form-control">
+            </div>
+            <div class="form-group">
+              <label>本文</label>
+              <textarea class="form-control" name="entry.1002658227"cols="30" rows="5"></textarea>
+            <button type="submit" class="button-contents form-btn">送信</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+
+              <!-- footer-icon -->
+              <li class="list-inline-item">
+                <a href="https://twitter.com/home?lang=ja">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/profile.php?id=100049621125410">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/tomoya-cpn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+
+            <!-- footer-copyright -->
+            <p class="copyright text-muted">Copyright &copy; Tomoya Portfolio 2020</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jquery -->
+
+    <script src="jquery.min.js"></script>
+    <script>
+      $(function(){
+        $('.skill-slide').hide();
+        $('.skill-open').each(function(){
+          if ($(this).hasClass('active')){
+            $(this).next().show();
+          }
+        })
+        
+        $('.skill-open').click(function(){
+          if ($(this).hasClass('active')){
+            $(this).next().slideUp();
+            $(".active").removeClass('active');
+          }
+          else {
+            $('.skill-open.active').next().slideUp();
+            $('.active').removeClass('active');
+            $(this).next().slideToggle();
+            $(this).addClass('active');
+          }
+        })
+
+        $('.menu-slide').hide();
+        $('.menu-btn').click(function(){
+          $('.menu-slide').slideToggle();
+        })
+
+        var pagetop = $("#page_top");
+        pagetop.hide();
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 100){
+            pagetop.fadeIn();
+          } else{
+            pagetop.fadeOut();
+          }
+        })
+
+        pagetop.click(function(){
+          $("body,html").animate({
+            scrollTop: 0
+          }, 500);
+          return false;
+        })
+      })
+    </script>
+
+  </body>
+
+</html>
